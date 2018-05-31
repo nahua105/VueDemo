@@ -1,64 +1,19 @@
 export default {
     name: 'vuebook',
+
     data() {
         return {
-            book:'《vue.js实战》',
-            slideList: [
-                {
-                    "clickUrl": "#",
-                    "desc": "nhwc",
-                    "image": "http://dummyimage.com/1745x492/f1d65b"
-                },
-                {
-                    "clickUrl": "#",
-                    "desc": "hxrj",
-                    "image": "http://dummyimage.com/1745x492/40b7ea"
-                },
-                {
-                    "clickUrl": "#",
-                    "desc": "rsdh",
-                    "image": "http://dummyimage.com/1745x492/e3c933"
-                }
-            ],
-            currentIndex: 0,
-            timer: ''
+            book:'《vue.js实战》'
         }
     },
     computed: {
         bookName: {
-            get: function () {
+            get:function(){
                 return this.book;
             }
-        },
+        }
     },
     mounted(){
-            this.book='node.js';  
-    }, 
-    created(){
-        this.$nextTick(() => {
-            this.timer = setInterval(() => {
-                this.autoPlay()
-            }, 4000)
-        })
-    },
-    methods:{
-         go() {
-            this.timer = setInterval(() => {
-                this.autoPlay()
-            }, 4000)
-        },
-        stop() {
-            clearInterval(this.timer)
-            this.timer = null
-        },
-        change(index) {
-            this.currentIndex = index
-        },
-        autoPlay() {
-            this.currentIndex++
-            if (this.currentIndex > this.slideList.length - 1) {
-                this.currentIndex = 0
-            }
-        }
+            this.book='node.js';
     }
 }
