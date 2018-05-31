@@ -1,7 +1,11 @@
 <template>
   <div>    
-    <img src="./../../assets/logo.png">   
+    <img src="./../../assets/logo.png">  
+
+  <div class="midstyle">
    <button @click="onLoginClick">登陆</button>
+
+   </div>   
   </div>
 </template>
 
