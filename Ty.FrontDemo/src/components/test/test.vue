@@ -28,7 +28,5 @@
         </CarouselItem>
     </Carousel>
 </template>
-  
-
 <script src="./test.ts"></script>
 <style src="./test.css"></style>
