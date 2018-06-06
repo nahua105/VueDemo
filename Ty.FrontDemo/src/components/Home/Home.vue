@@ -32,7 +32,7 @@
       <Layout>
         <Sider hide-trigger :style="{background: '#fff'}">
           <Menu active-name="1-2" theme="light" width="auto" :open-names="['1']" @on-select="onTopMenuSelect">
-            <MenuItem name="home"> 首页
+            <MenuItem name="indexpage"> 首页
             </MenuItem>
             <Submenu name="1">
               <template slot="title">

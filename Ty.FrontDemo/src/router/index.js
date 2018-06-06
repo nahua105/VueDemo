@@ -4,6 +4,8 @@ import Login from '@/components/Login/Login';
 import Home from '@/components/Home/Home';
 import Test from '@/components/Test/Test';
 import books from '@/components/books/books';
+import indexpage from '@/components/indexpage/indexpage';
+
 
 
 
@@ -52,6 +54,11 @@ export default new Router({
           path:'/books',
           name:'/books',
           component:books
+        },
+        {
+          path:'/indexpage',
+          name:'/indexpage',
+          component:indexpage
         }
       ]
     },
