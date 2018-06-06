@@ -3,6 +3,9 @@ import Router from 'vue-router';
 import Login from '@/components/Login/Login';
 import Home from '@/components/Home/Home';
 import Test from '@/components/Test/Test';
+import books from '@/components/books/books';
+
+
 
 Vue.use(Router)
 
@@ -44,6 +47,11 @@ export default new Router({
           path:'/test',
           name:'/test',
           component:Test
+        },
+        {
+          path:'/books',
+          name:'/books',
+          component:books
         }
       ]
     },
